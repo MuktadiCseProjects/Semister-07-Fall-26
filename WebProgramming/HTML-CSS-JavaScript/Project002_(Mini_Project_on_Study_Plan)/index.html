@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Study Planner</title>
+
+    <!-- ==============================================
+        EXTERNAL CSS
+        ============================================== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ==============================================
+        INTERNAL CSS
+        ============================================== -->
+    <style>
+        .today {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+        }
+
+        .today h2 {
+            color: #856404;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ==============================================
+        HEADER
+        ============================================== -->
+
+    <header>
+
+        <h1>My Study Planner</h1>
+
+        <p>
+            Plan your study. Stay focused. Achieve your goals.
+        </p>
+
+    </header>
+
+    <main>
+
+        <!-- ==============================================
+            TODAY'S GOAL
+            ============================================== -->
+
+        <section class="today">
+
+            <h2>Today's Goal</h2>
+
+            <p>
+                Complete HTML and CSS practice.
+            </p>
+
+        </section>
+
+        <!-- ==============================================
+            SUBJECTS
+            ============================================== -->
+
+        <section class="subjects">
+
+            <h2>Subjects to Study</h2>
+
+            <div class="subject">
+                <h3>HTML</h3>
+                <p>
+                    Learn HTML structure, tags, tables and forms.
+                </p>
+            </div>
+
+            <div class="subject">
+                <h3>CSS</h3>
+                <p>
+                    Practice colors, selectors and layouts.
+                </p>
+            </div>
+
+            <div class="subject">
+                <h3>JavaScript</h3>
+                <p>
+                    Learn variables, functions and basic programming.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- ==============================================
+            STUDY SCHEDULE TABLE
+            ============================================== -->
+
+        <section class="schedule">
+
+            <h2>Weekly Study Schedule</h2>
+
+            <table>
+
+                <!-- Table heading -->
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Subject</th>
+                    <th>Activity</th>
+                </tr>
+
+                <!-- Monday -->
+                <tr>
+                    <td rowspan="2">Monday</td>
+                    <td>9:00 AM</td>
+                    <td>HTML</td>
+                    <td>Learn HTML Tags</td>
+                </tr>
+
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>CSS</td>
+                    <td>Practice Selectors</td>
+                </tr>
+
+                <!-- Tuesday -->
+                <tr>
+                    <td>Tuesday</td>
+                    <td>10:00 AM</td>
+                    <td>JavaScript</td>
+                    <td>Practice Variables</td>
+                </tr>
+
+                <!-- Colspan -->
+                <tr>
+                    <td colspan="4">
+                        Wednesday - Revision Day
+                    </td>
+                </tr>
+
+                <!-- Thursday -->
+                <tr>
+                    <td>Thursday</td>
+                    <td>9:00 AM</td>
+                    <td>HTML</td>
+                    <td>Practice Tables & Forms</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <!-- ==============================================
+            STUDY MATERIALS - UL
+            ============================================== -->
+
+        <section class="materials">
+
+            <h2>Study Materials</h2>
+
+            <p>Things I need for studying:</p>
+
+            <ul>
+                <li>HTML Notes</li>
+                <li>CSS Notes</li>
+                <li>VS Code</li>
+                <li>Practice Exercises</li>
+            </ul>
+
+        </section>
+
+        <!-- ==============================================
+            STUDY STEPS - OL
+            ============================================== -->
+
+        <section class="steps">
+
+            <h2>My Study Process</h2>
+
+            <p>I follow these steps when learning:</p>
+
+            <ol>
+                <li>Read the topic</li>
+                <li>Watch an example</li>
+                <li>Write the code</li>
+                <li>Practice by myself</li>
+                <li>Review my mistakes</li>
+            </ol>
+
+        </section>
+
+        <!-- ==============================================
+            MOTIVATION
+            ============================================== -->
+
+        <section class="motivation">
+
+            <h2>Study Motivation</h2>
+
+            <!-- INLINE CSS -->
+
+            <p style="color: green; font-weight: bold;">
+                Small progress every day leads to big results!
+            </p>
+
+        </section>
+
+        <!-- ==============================================
+            STUDY PLAN FORM
+            ============================================== -->
+
+        <section class="study-form">
+
+            <h2>Create Your Study Plan</h2>
+
+            <form id="studyForm">
+
+                <!-- Name -->
+                <label for="name">
+                    Student Name:
+                </label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                >
+
+                <!-- Email -->
+                <label for="email">
+                    Email:
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                >
+
+                <!-- Subject -->
+                <label for="subject">
+                    Choose Subject:
+                </label>
+                <select id="subject" name="subject">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">
+                        JavaScript
+                    </option>
+                </select>
+
+                <!-- Study Date -->
+                <label for="date">
+                    Study Date:
+                </label>
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                >
+
+                <!-- Study Time -->
+                <label for="time">Study Time:</label>
+                <input
+                    type="time"
+                    id="time"
+                    name="time"
+                    step="1"
+                >
+
+                <!-- Study Type -->
+                <p>Study Type:</p>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="study-type"
+                        value="individual"
+                    >
+                    Individual
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="study-type"
+                        value="group"
+                    >
+                    Group
+                </label>
+
+                <!-- Topics -->
+                <p>Topics to Practice:</p>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="topics"
+                        value="selectors"
+                    >
+                    Selectors
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="topics"
+                        value="tables"
+                    >
+                    Tables
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="topics"
+                        value="forms"
+                    >
+                    Forms
+                </label>
+
+                <!-- Message -->
+                <label for="message">
+                    Study Goal:
+                </label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Write your study goal..."
+                ></textarea>
+
+                <!-- Submit -->
+                <button type="submit">
+                    Save Study Plan
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- ==============================================
+        FOOTER
+        ============================================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 My Study Planner
+        </p>
+
+    </footer>
+
+<script>
+    document.getElementById("studyForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Stops the page from refreshing
+        alert("Study Plan submitted successfully!");
+    });
+</script>
+
+</body>
+
+</html>

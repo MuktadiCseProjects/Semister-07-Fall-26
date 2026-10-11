@@ -1,0 +1,204 @@
+/* ==============================================
+   EXTERNAL CSS
+   ============================================== */
+
+/* ==============================================
+   ELEMENT SELECTOR
+   ============================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    color: #333;
+}
+
+/* ==============================================
+   ELEMENT SELECTOR
+   ============================================== */
+
+header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* ==============================================
+   CLASS SELECTOR
+   ============================================== */
+
+.today,
+.subjects,
+.schedule,
+.materials,
+.steps,
+.motivation,
+.study-form {
+    width: 650px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* ==============================================
+   CLASS SELECTOR
+   ============================================== */
+
+.subject {
+    background-color: #eef2ff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* ==============================================
+   DESCENDANT SELECTOR
+   ============================================== */
+
+/*
+   Selects h3 elements inside .subject
+*/
+
+.subject h3 {
+    color: #2563eb;
+    margin-bottom: 5px;
+}
+
+/*
+   Selects p elements inside .subject
+*/
+
+.subject p {
+    color: #555;
+}
+
+/* ==============================================
+   GROUP SELECTOR
+   ============================================== */
+
+.subjects h2,
+.schedule h2,
+.materials h2,
+.steps h2,
+.motivation h2,
+.study-form h2 {
+    color: #1e3a8a;
+}
+
+/* ==============================================
+   TABLE
+   ============================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Element Selector */
+
+th {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+}
+
+/* Element Selector */
+
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+/* ==============================================
+   TABLE ROW HOVER
+   ============================================== */
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* ==============================================
+   LISTS
+   ============================================== */
+
+ul,
+ol {
+    line-height: 2;
+}
+
+/* ==============================================
+   FORM
+   ============================================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Descendant Selector */
+
+form label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* ==============================================
+   INPUTS
+   ============================================== */
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* ==============================================
+   RADIO & CHECKBOX
+   ============================================== */
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* ==============================================
+   BUTTON
+   ============================================== */
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ==============================================
+   BUTTON HOVER
+   ============================================== */
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* ==============================================
+   FOOTER
+   ============================================== */
+
+footer {
+    text-align: center;
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
